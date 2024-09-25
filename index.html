@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/RPSLS.png" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- JS -->
+    <script defer src="./js/script.js"></script>
+    <title>Rock Paper Scissors Lizard Spock</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <!-- Languages -->
+      <div class="langWrap">
+        <a onclick="ptbr()" href="#" language="ptbr" class="active"
+          ><img src="./img/br.png" alt="pt-br"
+        /></a>
+        <a onclick="enus()" href="#" language="enus"
+          ><img src="./img/usa.png" alt="en-us"
+        /></a>
+        <a onclick="es()" href="#" language="es"
+          ><img src="./img/es.png" alt="es"
+        /></a>
+        <a onclick="fr()" href="#" language="fr"
+          ><img src="./img/fr.png" alt="fr"
+        /></a>
+        <a onclick="hindi()" href="#" language="hindi"
+          ><img src="./img/in.png" alt="in"
+        /></a>
+      </div>
+
+      <div>
+        <h1 id="titleString"></h1>
+      </div>
+      <!-- Modal -->
+      <button class="open-modal" id="rulesButtonString"></button>
+      <div id="fade" class="hide"></div>
+      <div id="modal" class="hide">
+        <div class="modal-header">
+          <h2 id="rulesTitleString"></h2>
+          <button id="close-modal">X</button>
+        </div>
+        <div class="modal-body">
+          <p id="rulesDescriptionString"></p>
+        </div>
+      </div>
+      <!--  -->
+      <div>
+        <h3 id="chooseString"></h3>
+      </div>
+      <div id="choices">
+        <button class="rock" onclick="play(`${rock}`)">
+          <img src="./img/rock.svg" alt="Rock" />
+        </button>
+        <button class="paper" onclick="play(`${paper}`)">
+          <img src="./img/paper.svg" alt="Paper" />
+        </button>
+        <button class="scissors" onclick="play(`${scissors}`)">
+          <img src="./img/scissors.svg" alt="Scissors" />
+        </button>
+        <button class="lizard" onclick="play(`${lizard}`)">
+          <img src="./img/lizard.svg" alt="Lizard" />
+        </button>
+        <button class="spock" onclick="play(`${spock}`)">
+          <img src="./img/spock.svg" alt="Spock" />
+        </button>
+      </div>
+      <!--  Display -->
+      <div class="display">
+        <div>
+          <span id="resultString"></span>
+          <span id="resultNumber"></span>
+        </div>
+        <div>
+          <span id="playerString"></span>
+          <span id="playerNumber"></span>
+        </div>
+        <div>
+          <span id="computerString"></span>
+          <span id="computerNumber"></span>
+        </div>
+        <div>
+          <span id="tieString"></span>
+          <span id="tieNumber"></span>
+        </div>
+        <div>
+          <span id="playerScoreString"></span>
+          <span id="playerScoreNumber"></span>
+        </div>
+        <div>
+          <span id="computerScoreString"></span>
+          <span id="computerScoreNumber"></span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
